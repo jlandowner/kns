@@ -50,6 +50,8 @@ $ kns sys
 ```
 
 ### Others
+```
 $ kns help
 $ kns --help
 $ kns version
+```
