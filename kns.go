@@ -50,12 +50,15 @@ func main() {
 
 	// Param check
 	namespace := ""
+	skipClusterAccess := false
 	if len(flag.Args()) == 1 {
 		switch flag.Args()[0] {
 		case "kube-system", "kube", "sys", "system":
 			namespace = "kube-system"
+			skipClusterAccess = true
 		case "default", "reset":
 			namespace = "default"
+			skipClusterAccess = true
 		case "help":
 			usage()
 			return
@@ -71,9 +74,9 @@ func main() {
 	}
 	// fmt.Println(namespace)
 
-	// if namespace is default then skip cluster access process
-	// it is based on the idea "default namespace exists in almost all clusters"
-	if namespace != "default" {
+	// if namespace is default and kube-system then skip cluster access process
+	// it is based on the idea "these namespaces exist in almost all clusters"
+	if !skipClusterAccess {
 		// Get namespaces from cluster of current contexts
 		config, err := clientcmd.BuildConfigFromFlags("", *kubeconfigPath)
 		if err != nil {
