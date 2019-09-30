@@ -1,4 +1,4 @@
-# kns - Easy change Kubernetes namespaces in kubeconfig
+# kns - Easy switch Kubernetes namespaces in kubeconfig
 This tool can change namespaces easily.
 You can change namespace seemlessly in kubectl commands operation.
 
