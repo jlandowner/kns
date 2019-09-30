@@ -37,7 +37,7 @@ Namespace not-exist does NOT Exist in the Cluster.
 ```
 $ kns default
 $ kns reset
-'** Completed: Switch namespace  default
+** Completed: Switch namespace  default
 ```
 
 #### Switch to kube-system namespace
