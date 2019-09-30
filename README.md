@@ -1,16 +1,16 @@
-# kns - Easy change Kubernetes namespaces in kubeconfig
+# kns - Easy switch Kubernetes namespaces in kubeconfig
 This tool can change namespaces easily.
 You can change namespace seemlessly in kubectl commands operation.
 
-# How to install
+## How to install
 ```
-$ git clone xxx
+$ git clone https://github.com/jlandowner/kns.git
 $ cp -p ./bin/kns /usr/local/bin/
 $ export PATH=$PATH:/usr/local/bin/
 $ kns help
 ```
-# How to use
-## Interactive action & List available namespaces
+## How to use
+### Interactive action & List available namespaces
 
 ```
 $ kns
@@ -23,7 +23,7 @@ Select[n] => 1
 ** Completed: Switch namespace  kube-system
 ```
 
-## Select the Specific namespace by a param
+### Select the Specific namespace by a param
 ```
 $ kns exist-namepsace
 ** Completed: Switch namespace  exist-namepsace
@@ -32,15 +32,15 @@ $ kns not-exist
 Namespace not-exist does NOT Exist in the Cluster.
 ```
 
-## Templete actions
-### Switch to default namespace
+### Templete actions
+#### Switch to default namespace
 ```
 $ kns default
 $ kns reset
-'** Completed: Switch namespace  default
+** Completed: Switch namespace  default
 ```
 
-### Switch to kube-system namespace
+#### Switch to kube-system namespace
 ```
 $ kns kube-system
 $ kns kube
@@ -49,7 +49,9 @@ $ kns sys
 ** Completed: Switch namespace  kube-system
 ```
 
-## Others
+### Others
+```
 $ kns help
 $ kns --help
 $ kns version
+```
