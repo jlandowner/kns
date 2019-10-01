@@ -5,7 +5,7 @@ You can change namespace seemlessly in kubectl commands operation.
 ## How to install
 ```
 $ git clone https://github.com/jlandowner/kns.git
-$ cp -p ./bin/kns /usr/local/bin/
+$ make install_linux    // for MacOS user -> 'make install_macos'
 $ export PATH=$PATH:/usr/local/bin/
 $ kns help
 ```
