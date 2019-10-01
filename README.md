@@ -10,7 +10,7 @@ $ export PATH=$PATH:/usr/local/bin/
 $ kns help
 ```
 ## How to use
-### Interactive action & List available namespaces
+### Interactive Action & Available Namespaces List
 
 ```
 $ kns
@@ -32,7 +32,7 @@ $ kns not-exist
 Namespace not-exist does NOT Exist in the Cluster.
 ```
 
-### Templete actions
+### Templete Actions
 #### Switch to default namespace
 ```
 $ kns default
