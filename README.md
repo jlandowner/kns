@@ -4,13 +4,13 @@ You can change namespace seemlessly in kubectl commands operation.
 
 ## How to install
 ```
-$ git clone https://github.com/jlandowner/kns.git
-$ make install_linux    // for MacOS user -> 'make install_macos'
+$ git clone https://github.com/jlandowner/kns.git && cd ./kns
+$ make install_linux  // for MacOS user -> 'make install_macos'
 $ export PATH=$PATH:/usr/local/bin/
 $ kns help
 ```
 ## How to use
-### Interactive action & List available namespaces
+### Interactive Action & Available Namespaces List
 
 ```
 $ kns
@@ -32,7 +32,7 @@ $ kns not-exist
 Namespace not-exist does NOT Exist in the Cluster.
 ```
 
-### Templete actions
+### Templete Actions
 #### Switch to default namespace
 ```
 $ kns default
