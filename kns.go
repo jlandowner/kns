@@ -15,6 +15,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
+	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 )
 
 // Kubeconfig is a kubeconfig yaml struct
